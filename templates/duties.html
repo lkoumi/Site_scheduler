@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Duty Scheduler SITE VIT</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+</head>
+
+<body>
+
+<div id="page">
+
+	<div id="header">
+		<div id="logo">
+			<h1>Duty Scheduler SITE VIT</h1>
+
+		</div>
+	</div>
+	<img src="{{url_for('static',filename='images/sjt.jpg')}}" alt="School Image" />
+	<div id="body">
+		
+		<div id="sidebar">
+			
+			
+			<div class="sidebar_head">
+                  <h2>Menu</h2>
+            </div>
+			<ul>
+				
+			
+			</ul>
+
+			
+			
+			
+			
+		</div>
+	
+			<div class="post">
+			
+			<!--
+			<select name="source" id="source" >
+					<option value="0" default selected>----Enter Designation----</option>
+					<option value="1">Senior Professor</option>
+					<option value="2">Professor</option>
+					<option value="3">Asso.Professor</option>
+					<option value="4">Assistant Prof SG</option>
+					<option value="5">Assistant Prof Sr</option>
+					<option value="6">Assistant Prof</option>
+					<option value="7">Assistant Prof Jr</option>
+			</select>  -->
+			
+			<h3>Designations:</h3>
+			<pre>
+			
+			<form name="frm" action="/sendDuties" method="post"/>
+	Senior Professor:   <input type="text" name="txt1" id="Senior Professor" value="1"><br>
+	Professor:          <input type="text" name="txt2" id="Professor" value="1"><br>
+	Asso. Professor:    <input type="text" name="txt3" id="Asso. Professor" value="2"><br>
+	Assistant Prof SG:  <input type="text" name="txt4" id="Asst. Prof. Sel. Grade" value="3"><br>
+	Assistant Prof Sr:  <input type="text" name="txt5" id="Asst. Prof. Senior" value="4"><br>
+	Assistant Prof:     <input type="text" name="txt6" id="Asst.Professor" value="5"><br>
+	Assistant Prof Jr:  <input type="text" name="txt7" id="Asst. Prof. Junior" value="5"><br>
+	Research Associate: <input type="text" name="txt8" id="Research Associate" value="4"><br>
+	Image Infotainment: <input type="text" name="txt9" id="Image Infotainment" value="5"><br>
+	Any Other:          <input type="text" name="txt10" id="Other" value="5"><br>
+			
+			<input type="submit" value="Submit Details">&nbsp
+			</form>
+			</pre>
+			
+		</div>	    
+			
+
+	
+	</div>
+
+
+
+</div>
+
+<div id="footer">
+	<p>Copyright &copy SITE-VIT| All Rights Will Be Reserved. <br/></p>
+</div>
+
+</body>
+</html>

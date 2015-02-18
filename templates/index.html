@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Duty Scheduler SITE VIT</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+</head>
+
+<body>
+
+<div id="page">
+
+	<div id="header">
+		<div id="logo">
+			<h1>Duty Scheduler SITE VIT</h1>
+
+		</div>
+	</div>
+	<!--<div id="header_image"></div>-->
+	<img src="{{url_for('static',filename='images/sjt.jpg')}}" alt="School Image" />
+	<div id="body">
+		
+		<div id="sidebar">
+			
+			
+			<div class="sidebar_head">
+                  <h2>Menu</h2>
+            </div>
+			<ul>
+				<li><a href="/"><b>Home</b></a></li>
+				<li><a href="/contact">Contact Supervisor</a></li>
+				
+			
+			</ul>
+
+			
+			
+			
+			
+		</div>
+		
+			<div class="post">
+			<form name="frmIndex" action="/duties1" method="post">
+			<h2>Enter Details:</h2>
+			Enter Date:<br>
+			<input type="text" placeholder="DD/MM/YYYY" name="dte"><hr>
+			<b>Enter Number of duties:</b><br>
+			Day1:&nbsp <input type="text" class="input1" name="t1" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t2" id="day12" placeholder="slot 2"><br>
+			
+			Day2:&nbsp <input type="text" class="input1" name="t3" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t4" id="day12" placeholder="slot 2"><br>
+			
+			Day3:&nbsp <input type="text" class="input1" name="t5" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t6" id="day12" placeholder="slot 2"><br>
+			
+			Day4:&nbsp <input type="text" class="input1" name="t7" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t8" id="day12" placeholder="slot 2"><br>
+			
+			Day5:&nbsp <input type="text" class="input1" name="t9" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t10" id="day12" placeholder="slot 2"><br>
+			
+			Day6:&nbsp <input type="text" class="input1" name="t11" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t12" id="day12" placeholder="slot 2"><br>
+			
+			Day7:&nbsp <input type="text" class="input1" name="t13" id="day11" placeholder="slot 1">  
+			&nbsp <input type="text" class="input1" name="t14" id="day12" placeholder="slot 2"><br>
+			
+			<hr>
+			
+			Upload Excel Sheet:<br>
+			<input type="file" name="Browse">
+			
+			</div>
+	
+			<div class="post">
+			<h2></h2>
+			<hr>
+			<input type="submit" value="Submit Details">&nbsp
+			</form>
+			<hr>    
+			</div>
+		
+	
+	</div>
+
+
+
+</div>
+
+<div id="footer">
+	<p>Copyright &copy SITE-VIT| All Rights Will Be Reserved. <br/></p>
+</div>
+
+</body>
+</html>
